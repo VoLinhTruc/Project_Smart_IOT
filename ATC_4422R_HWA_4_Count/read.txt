@@ -1,0 +1,13 @@
+﻿Vùng nhớ
+1 : input 1
+2 : input 2
+3 : input 3
+4 : input 4
+5 : thời gian chuyển từ 0 - 1 của input 1
+6 : thời gian chuyển từ 0 - 1 của input 2
+7 : thời gian chuyển từ 0 - 1 của input 3
+8 : thời gian chuyển từ 0 - 1 của input 4
+9 : đếm số lần input 1
+10 : đếm số lần input 2
+11 : đếm số lần input 3
+12 : đếm số lần input 4

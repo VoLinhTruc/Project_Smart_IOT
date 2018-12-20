@@ -1,0 +1,11 @@
+vùng nhớ 
+1 - 2 -3 : Bắt đầu của thanh ghi input từ 1000 và lấy 3 thanh ghi
+10 - 11 -12 : vùng nhớ bắt đầu holding từ 0 và lấy 3 thanh ghi
+14 : vùng nhó setting của vùng nhớ holding 0;
+
+4 : sau khi map analog 1
+5 : sau khi map analog 2
+6 : khong map analog 1
+7 : khong map analog 2
+8 : trạng thai input 1
+9 : time count input 1
