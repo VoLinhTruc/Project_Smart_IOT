@@ -102,8 +102,8 @@ void loop() {
   static register_t last_setting_value;
   if(slave_analog_output_holding_register_list[14] != last_setting_value)
   {
-    master.RTUSoftSerialWriteSingleRegisterRequest(PERIPHERAL_ID, 0, 1);
     last_setting_value = slave_analog_output_holding_register_list[14];
+    master.RTUSoftSerialWriteSingleRegisterRequest(PERIPHERAL_ID, 0, slave_analog_output_holding_register_list[14]);
   }
 
   
