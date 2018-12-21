@@ -1,0 +1,8 @@
+lưu analog 4 - 20ma
+vùng nhớ 
+1 : analog 1
+2 : analog 2
+3 : giá trị analog 1 sau khi map()
+4 : giá trị analog 2 sau khi map() 
+
+map(giatri,0,1024,40,1000)

@@ -1,8 +1,0 @@
-lưu analog 4 - 20ma
-vùng nhớ 
-1 : analog 1
-2 : analog 2
-3 : giá trị của trạng thái 1 "để người dùng thay đổi để tỷ lệ là 1:1" 
-4 : giá trị của trạng thái 2 "để người dùng thay đổi để tỷ lệ là 1:1" 
-
-map(giatri,0,1024,40,1000)
