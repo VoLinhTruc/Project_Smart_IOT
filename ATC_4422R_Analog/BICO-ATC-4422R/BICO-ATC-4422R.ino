@@ -1,4 +1,5 @@
 #include "Arduino_Slave_RTU_Serial.h"
+#include "SmoothingAnalog.h"
 
 #define DI0 10
 #define DI1 9
@@ -22,6 +23,9 @@ Arduino_Slave_RTU_Serial modbus;
 
 #define ESP_POLLING_TIMEOUT 5000
 long last_esp_polling = 0;
+
+SmoothingAnalog smoothing_RTD0(RTD0, 50);
+SmoothingAnalog smoothing_RTD1(RTD1, 50);
 
 void setup() {
   // put your setup code here, to run once:
@@ -123,8 +127,8 @@ void IOUpdate()
 
 void updateAnalogIn()
 {
-  slave_analog_output_holding_register_list[1] = analogRead(RTD0);
-  slave_analog_output_holding_register_list[2] = analogRead(RTD1);
+  slave_analog_output_holding_register_list[1] = smoothing_RTD0.getAnalog();
+  slave_analog_output_holding_register_list[2] = smoothing_RTD1.getAnalog();
 }
 
 
